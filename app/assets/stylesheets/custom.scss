@@ -1,0 +1,59 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+  
+header, footer {
+    width: 100%;
+    padding: 10px;
+    background: #c52f24;
+    color: #fff;
+    margin: 0px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.main_container {
+    margin: 50px 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #ffdfdf;
+}
+
+table th, table td {
+    border: solid 1px black;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_container {
+    margin: 50px 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+}

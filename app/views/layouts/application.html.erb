@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Schedule</title>
+    <title>Schedule APP</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,6 +12,7 @@
   <body>
     <%= render 'layouts/header' %>
     <%= yield %>
+    <p><%= link_to "スケジュール新規登録", '#' %></p>
     <%= render 'layouts/footer' %>
   </body>
 </html>

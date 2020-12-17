@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'schedules#index'
   get 'schedules/index'
   get 'schedules/show'
   get 'schedules/new'
