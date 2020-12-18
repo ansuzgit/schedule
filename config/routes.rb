@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   root 'schedules#index'
-  get 'schedules/index'
-  get 'schedules/show'
-  get 'schedules/new'
-  get 'schedules/edit'
-  get 'schedules/create'
-  get 'schedules/update'
-  get 'schedules/destroy'
+  get '/show' , to: 'schedules#show'
+  get '/new' , to: 'schedules#new'
+  get '/edit' , to: 'schedules#edit'
+  get '/create' , to: 'schedules#create'
+  get '/update' , to: 'schedules#update'
+  get '/destroy' , to: 'schedules#destroy'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

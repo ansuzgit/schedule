@@ -2,37 +2,37 @@ require 'test_helper'
 
 class SchedulesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get schedules_index_url
+    get root_path
     assert_response :success
   end
 
   test "should get show" do
-    get schedules_show_url
+    get show_path
     assert_response :success
   end
 
   test "should get new" do
-    get schedules_new_url
+    get new_path
     assert_response :success
   end
 
   test "should get edit" do
-    get schedules_edit_url
+    get edit_path
     assert_response :success
   end
 
   test "should get create" do
-    get schedules_create_url
+    get create_path
     assert_response :success
   end
 
   test "should get update" do
-    get schedules_update_url
+    get pdate_path
     assert_response :success
   end
 
   test "should get destroy" do
-    get schedules_destroy_url
+    get destroy_path
     assert_response :success
   end
 
