@@ -27,7 +27,7 @@ class SchedulesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get update" do
-    get pdate_path
+    get update_path
     assert_response :success
   end
 
