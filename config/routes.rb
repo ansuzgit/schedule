@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get '/create' , to: 'schedules#create'
   get '/update' , to: 'schedules#update'
   get '/destroy' , to: 'schedules#destroy'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :posts
 end
