@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 body {
   margin: 0px;
   padding: 0px;
@@ -32,6 +33,16 @@ h1 {
     margin: 50px 15px;
 }
 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -47,10 +58,6 @@ table th, table td {
 
 a {
     text-decoration: none;
-}
-
-.main_container {
-    margin: 50px 15px;
 }
 
 footer {
@@ -70,3 +77,35 @@ clear: both;
 float: left;
 width: 100%;
 margin-top: 45px; @include box_sizing; }
+
+/* form */
+input, pre {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.posts-content {
+    width: 350px;
+    height: 200px;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    width: auto;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 0px;
+}

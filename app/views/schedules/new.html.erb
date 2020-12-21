@@ -1,2 +1,39 @@
-<h1>Schedules#new</h1>
-<p>Find me in app/views/schedules/new.html.erb</p>
+<div class = "main_container">
+  <div class= "information">
+    <h2>スケジュール新規作成</h2>
+  </div>
+
+<%= form_with(model: @post,local: true) do |f| %>
+  <table>
+    <tr>
+      <th><%= f.label "タイトル" %></th>
+      <th><%= f.text_field :title %></th>
+    </tr>
+    <tr>
+      <th><%= f.label "開始日" %></th>
+      <th><%= f.date_field :start %></th>
+    </tr>
+     <tr>
+      <th><%= f.label "終了日" %></th>
+      <th><%= f.date_field :finish %></th>
+    </tr>
+    <tr>
+      <th><%= f.label "終日" %></th>
+      <th><%= f.check_box :all_day %>
+          終日の場合はチェックを入れてください</th>
+    </tr>
+    <tr>
+      <th><%= f.label "メモ" %></th>
+      <th><%= f.text_field :memo , class: "posts-content" %></th>
+    </tr>
+  </table>
+  <ul>
+    <li><%= f.submit "スケジュールを新規登録する" , class: "btn"%></li>
+    <li><%= link_to "スケジュール一覧に戻る", root_path %></li>
+  </ul>
+<% end %>
+</div>
+
+<footer>
+  <h1> 現在の日時 : <%= Date.today.strftime('%Y/%m/%d') %></h1>
+</footer>  
