@@ -1,0 +1,37 @@
+<div class = "main_container">
+  <div class="information">
+    <h2>スケジュール詳細</h2>
+  </div>
+  <table>
+    <tr>
+      <th>タイトル</th>
+      <td><%= @post.title %></td>
+    </tr> 
+    <tr>  
+      <th>開始日</th>
+      <td><%= @post.start.strftime('%Y-%m-%d')  %></td>
+    </tr> 
+    <tr>
+      <th>終了日</th>
+      <td><%= @post.finish.strftime('%Y-%m-%d')  %></td>
+    </tr> 
+    <tr>
+      <th>終日</th>
+      <td>
+        <% if @post.all_day %>
+          <strong>⚪︎<strong>
+        <% end%>
+      </td>
+    </tr> 
+    <tr>
+      <th>メモ</th>
+      <td><%= @post.memo %></td>
+    </tr> 
+  </table>
+  <p><%= link_to "スケジュール一覧に戻る", root_path %></p>
+  <p><%= link_to "スケジュールを編集する", new_path %></p>
+  <p><%= link_to "スケジュールを削除する", root_path %></p>
+</div>
+<footer>
+  <h1> 現在の日時 : <%= Date.today.strftime('%Y-%m-%d') %></h1>
+</footer> 

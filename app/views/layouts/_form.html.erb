@@ -1,0 +1,31 @@
+<%= form_with(model: @post,local: true) do |f| %>
+  <%= render 'shared/error_messages' %>
+  <table>
+    <tr>
+      <th><%= f.label "タイトル" %></th>
+      <th><%= f.text_field :title, class: 'form-control' %></th>
+    </tr>
+    <tr>
+      <th><%= f.label "開始日" %></th>
+      <th><%= f.date_field :start, class: 'form-control' %></th>
+    </tr>
+     <tr>
+      <th><%= f.label "終了日" %></th>
+      <th><%= f.date_field :finish, class: 'form-control' %></th>
+    </tr>
+    <tr>
+      <th><%= f.label "終日" %></th>
+      <th><%= f.check_box :all_day, class: 'form-control' %>
+          終日の場合はチェックを入れてください</th>
+    </tr>
+    <tr>
+      <th><%= f.label "メモ" %></th>
+      <th><%= f.text_field :memo , class: 'posts-content form-control' %></th>
+    </tr>
+  </table>
+  <ul>
+    <li><%= f.submit  yield(:btn_name), class: "btn"%></li>
+    <li><%= link_to "スケジュール一覧に戻る", root_path %></li>
+  </ul>
+<% end %>
+</div>

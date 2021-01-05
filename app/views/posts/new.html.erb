@@ -1,0 +1,12 @@
+<% provide(:btn_name, "スケジュールを新規登録する" ) %>
+
+<div class = "main_container">
+  <div class= "information">
+    <h2>スケジュール新規作成</h2>
+  </div>
+  <%= render 'layouts/form' %>
+</div>
+
+<footer>
+  <h1> 現在の日時 : <%= Date.today.strftime('%Y-%m-%d') %></h1>
+</footer>  
